@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    font-family: 'roboto';
+    color: var(--primary-text-color);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+
+}
+.main-nav{
+    justify-content: space-between;
+    padding-block: 8px;
+}
+.nav-links ul{
+    gap: 16px;
+}
+nav{
+    background-color:rgb(240, 247, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+
+}
+.company-logo img{
+    width: 80px;
+}
+.hover-link{
+    cursor: pointer;
+}
+.hover-link:hover{
+    color: var(--secondary-text-color);
+}
+.hover-link:active{
+    color: red;
+}
+.search-bar{
+    height: 32px;
+    gap: 8px;
+}
+.news-input{
+    width: 200px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid red;
+
+}
+.search-button{
+    background-color: var(--accent-color);
+    padding: 8px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+.search-button hover{
+    background-color:var(--accent-color-dark);
+}
+main{
+    padding-block: 20px;
+    margin-top: 80px;
+}
+.cards-container{
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+.card-content{
+    padding: 12px;
+   
+}
+.card{
+    width:360px;
+    min-height: 400px;
+    overflow: hidden;
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 4px;
+    border-radius: 4px;
+}
+.card:hover{
+    box-shadow: 1px 1px 8px;
+    background-color: azure;
+    transform: translateY(-2px);
+}
+.card-header img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.nav-item.active{
+    color: var(--accent-color);
+}
